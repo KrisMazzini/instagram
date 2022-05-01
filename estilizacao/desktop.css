@@ -1,0 +1,408 @@
+/* GERAL 
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    background-color: #fafafa;
+}
+
+ion-icon {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.liked {
+    color: #ED4956;
+}
+
+/* MENU TOPO
+ */
+.topo {
+    width: 100%;
+    
+    border: 1px solid #dbdbdb;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 100;
+
+    background-color: rgb(255, 255, 255, 1);
+}
+
+.menu {
+    width: 935px;
+    height: 54px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu input {
+    width: 215px;
+    height: 28px;
+
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+
+    font-size: 12px;
+    font-weight: 400;
+    color: #979797;
+    text-align: center;
+
+    background-color: #fafafa;
+}
+
+.menu img {
+    width: 103px;
+    height: 29px;
+    margin-right: 22.75px;
+
+    cursor: pointer;
+}
+
+.menu div {
+    display: flex;
+    align-items: center;
+}
+
+.menu .instagram ion-icon {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #dbdbdb; 
+}
+
+.menu .instagram .mobile {
+    display: none;
+}
+
+.menu .opcoes ion-icon {
+    margin-left: 22.75px;
+}
+
+/* CONTEUDO
+ */
+.conteudo {
+    width: 935px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    width: 614px;
+
+    margin: 88px 0 0 0;
+}
+
+/* STORIES
+ */
+.stories {
+    height: 118px;
+
+    padding: 18px 0 0 18px;
+    margin-bottom: 24px;
+
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+
+    display: flex;
+    overflow: hidden;
+
+    position: relative;
+
+    background-color: #ffffff;
+}
+
+.story {
+    width: 66px;
+
+    margin-right: 14px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.story p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #262626;
+}
+
+.stories-img {
+    position: relative;
+    cursor: pointer;
+}
+
+.background-img {
+    width: 66px;
+    height: 66px;
+
+    margin-bottom: 1px;
+
+    border-radius: 100%;
+}
+
+.story-img {
+    width: 56px;
+    height: 56px;
+
+    border-radius: 100%;
+
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.stories ion-icon {
+    width: 26px;
+    height: 26px;
+
+    border-radius: 100%;
+    
+    position: absolute;
+    top: 46px;
+    bottom: 46px;
+    right: 9px;
+    
+    color: #ffffff;
+}
+
+/* POSTS FEED
+ */
+.feed article{
+    margin-bottom: 60px;
+    border: 1px solid #dbdbdb;
+
+    background-color: #ffffff;
+}
+
+.perfil-feed {
+    padding: 15px 17px 14px 17px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfil-feed div {
+    display: flex;
+    align-items: center;
+}
+
+.perfil-feed img {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+
+    margin-right: 15px;
+
+    cursor: pointer;
+}
+
+.perfil-feed h1 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #262626;
+
+    cursor: pointer;
+}
+
+.perfil-feed h1:hover {
+    text-decoration: underline;
+}
+
+.post {
+    width: 100%;
+    
+    padding: 0 1px;
+}
+
+.botoes {
+    padding: 10px 0 10px 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botoes ion-icon {
+    margin-right: 15px;
+}
+
+.feed article footer {
+    padding: 0 0 14px 17px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.feed article footer img {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+
+    margin-right: 5px;
+
+    cursor: pointer;
+}
+
+.feed article footer h1 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.feed article footer span {
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+/* BARRA LATERAL
+ */
+aside {
+    width: 293px;
+    height: 749px;
+
+    margin-top: 111px;
+}
+
+aside .perfil-principal {
+    margin-bottom: 24px;
+
+    display: flex;
+    align-items: center;
+}
+
+aside .perfil-principal img {
+    width: 56px;
+    height: 56px;
+
+    margin-right: 17px;
+
+    border-radius: 100%;
+
+    cursor: pointer;
+}
+
+.perfil-principal h1 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #262626;
+    
+    cursor: pointer;
+}
+
+aside .perfil-principal span {
+    font-weight: 300;
+    color: #8e8e8e;
+
+    cursor: text;
+}
+
+.chamada {
+    margin-bottom: 1px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.chamada h1 {
+    font-size: 12px;
+    font-weight: 500;
+    color: #8e8e8e;
+}
+
+.chamada h2 {
+    font-size: 12px;
+    font-weight: 500;
+    color: #262626;
+
+    cursor: pointer;
+}
+
+.sugestao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 16px;
+}
+
+.sugestao .perfil {
+    display: flex;
+    align-items: center;
+}
+
+.sugestao .perfil img {
+    width: 32px;
+    height: 32px;
+
+    margin-right: 11px;
+    margin-bottom: 0;
+    border-radius: 100%;
+
+    cursor: pointer;
+}
+
+.sugestao .perfil h1 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #262626;
+
+    margin-bottom: 6px;
+
+    cursor: pointer;
+}
+
+.sugestao .perfil h1:hover {
+    text-decoration: underline;
+}
+
+.sugestao .perfil h2 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #8e8e8e;
+}
+
+.sugestao span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #139ef2;
+
+    cursor: pointer;
+}
+
+aside footer {
+    margin-top: 33px;
+}
+
+aside footer div {
+    font-size: 11px;
+    font-weight: 400;
+    color: #c7c7c7;
+
+    margin-bottom: 18px;
+}
+
+/* MENU INFERIOR
+ */
+.footer {
+    display: none;
+}

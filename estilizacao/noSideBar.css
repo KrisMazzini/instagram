@@ -1,0 +1,15 @@
+@media (max-width: 935px) {
+    .menu {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .conteudo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    aside {
+        display: none;
+    }
+}
